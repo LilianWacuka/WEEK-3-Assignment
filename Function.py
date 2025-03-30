@@ -8,6 +8,9 @@ def calculate_discount(price, discount_percent):
         return price
     
  # Define price and discount outside the function
+ 
+ 
+
 price = 100
 discount = 25
 # Call the function
@@ -23,14 +26,14 @@ print(calculate_discount(price, discount))
 # Output: 100
 
 # Get user input
-price = float(input("Enter the original price of the item: "))
-discount_percent = float(input("Enter the discount percentage: "))
+price = float(input("Enter the original price of the item: &"))
+discount = float(input("Enter the discount percentage: "))
 
 # Calculate the final price
-final_price = calculate_discount(price, discount_percent)
+final_price = calculate_discount(price, discount)
 
 # Print the result
 if final_price == price:
     print(f"No discount applied. The original price is: ${price:.2f}")
 else:
-    print(f"Discount applied! The final price after {discount_percent}% discount is: ${final_price:.2f}")
+    print(f"Discount applied! The final price after {discount}% discount is: ${final_price:.2f}")
